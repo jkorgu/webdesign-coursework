@@ -1,0 +1,110 @@
+/*
+Main Text Color: Black (#000000)
+Secondary Text and Reading Background Color: White (#FFFFFF)
+Background Color: "SteelBlue" (#4682B4)
+Accent and Interactive Feature Color: "Darker Purple" #36006C
+Main Color: "RebeccaPurple" (#663399)
+Font(s) used: Alexandria
+
+:root {
+    --mainText: black;
+    --secondaryText: white;
+    --backgroundColor: steelblue;
+    --accentColor: #36006C;
+    --mainColor: rebeccapurple;
+}
+
+*/
+
+:root {
+    --mainText: black;
+    --secondaryText: white;
+    --backgroundColor:  #9A031E;
+    --accentColor: #246A73;
+    --mainColor:  #368F8B;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+header {
+    background-color: var(--secondaryText);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family:'Alexandria';
+    color: var(--mainText);
+}
+
+h1 {
+    font-size:36pt;
+}
+
+h3 {
+    font-size:20pt;
+}
+
+p {
+    font-size:10pt;
+}
+
+main {
+    background-color: var(--secondaryText);
+    border-radius:10px;
+}
+
+aside {
+    background-color: var(--secondaryText);
+    border-radius:10px;
+}
+
+footer {
+    background-color: var(--mainColor);
+    border-radius:10px;
+}
+
+nav li {
+    border: 2px solid;
+    border-color: var(--accentColor);
+    background-color: var(--mainColor);
+    list-style-type: none;
+}
+
+nav li a {
+    color: var(--secondaryText);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: var(--accentColor);
+}
+
+.active {
+    background-color: var(--accentColor);
+}
+
+table {
+    font-family:'Alexandria';
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 2px solid #F0F0F0;
+}
+
+table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+table tr:hover {
+    background-color: var(--backgroundColor);
+}
+
+table th {
+    background-color: var(--mainColor);
+    color: white;
+}
