@@ -30,35 +30,27 @@ body {
 
 header {
     background-color: var(--secondaryText);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 10px;
-    border:16px;
-}
-
-#logo{
-    height:60px;
-    width:60px;
-    float:left;
-    margin-right:10px;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    padding: 2%;
+    margin:5%;
+    border-radius: 50%;
+    text-align:center;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     font-family:'Alexandria';
     color: var(--mainText);
-    padding:10px;
-}
-
-header h1{
-    display:inline;
 }
 
 h1 {
     font-size:36pt;
+    color:aquamarine;
 }
 
 h3 {
     font-size:20pt;
+    color:orange;
 }
 
 p {
@@ -68,7 +60,6 @@ p {
 main {
     background-color: var(--secondaryText);
     border-radius:10px;
-    overflow:auto;
 }
 
 aside {
@@ -79,26 +70,13 @@ aside {
 footer {
     background-color: var(--mainColor);
     border-radius:10px;
-    font-family:'Alexandria';
-    position:sticky;
-    left:0;
-    bottom:0;
-}
-
-nav ul{
-    margin:0;
-    padding:0;
-    overflow:hidden;
 }
 
 nav li {
-    border:2px, solid;
-    border-color: var(--backgroundColor);
+    border: 2px solid;
+    border-color: var(--accentColor);
     background-color: var(--mainColor);
     list-style-type: none;
-    float:left;
-    width:15%;
-    padding:16px;
 }
 
 nav li a {
@@ -108,8 +86,7 @@ nav li a {
 }
 
 nav li:hover {
-    /*background-color: var(--accentColor);*/
-    background-color: var(--mainText);
+    background-color: var(--accentColor);
 }
 
 .active {
@@ -118,11 +95,13 @@ nav li:hover {
 
 table {
     font-family:'Alexandria';
-    border-collapse: collapse;
+    border-radius: 5%;
+    border-style:ridge;
 }
 
 table td, table th {
     border: 2px solid #F0F0F0;
+    border-color: greenyellow;
 }
 
 table tr:nth-child(even) {
@@ -136,26 +115,4 @@ table tr:hover {
 table th {
     background-color: var(--mainColor);
     color: white;
-}
-
-fieldset{
-    background-color: var(--secondaryText);
-}
-
-input, label{
-    font-family:'Alexandria';
-}
-
-input{
-    
-}
-
-#left-col{
-    float:left;
-    background-color:var(--secondaryText);
-}
-
-#right-col{
-    float:right;
-    padding:3%;
 }
