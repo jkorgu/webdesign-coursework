@@ -146,9 +146,9 @@ input, label{
     font-family:'Alexandria';
 }
 
-input{
+/*input{
     
-}
+}*/
 
 #left-col{
     float:left;
@@ -159,3 +159,12 @@ input{
     float:right;
     padding:3%;
 }
+
+
+/*CAROUSEL MAIN PAGE*/
+
+#home-carousel .carousel-item, .carousel-item-active{
+    height:500px;
+    width:750px;
+}
+/*lab 6.1 page4, buttons dont work, fix them then add captions + slide indicator.
