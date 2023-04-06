@@ -80,7 +80,6 @@ footer {
     background-color: var(--mainColor);
     border-radius:10px;
     font-family:'Alexandria';
-    position:sticky;
     left:0;
     bottom:0;
 }
@@ -161,10 +160,42 @@ input, label{
 }
 
 
-/*CAROUSEL MAIN PAGE*/
+/*CAROUSEL + ANY CONTENT INSIDE OF IT*/
 
-#home-carousel .carousel-item, .carousel-item-active{
-    height:500px;
-    width:750px;
+#home-carousel .carousel-item{
+    height:100%;
+    width:100%;
 }
-/*lab 6.1 page4, buttons dont work, fix them then add captions + slide indicator.
+
+#home-carousel .carousel-item-active{
+    height:100%;
+    width:100%;
+}
+
+#home-carousel .carousel-item img{
+    height:100%;
+    width:100%;
+}
+
+#white-text{
+    color: white;
+}
+
+
+/* IMAGE GALLERY */
+
+.gallery-img{
+    width:100%;
+    height:100%;
+}
+
+#img-gallery{
+    padding-top:10px;
+}
+
+#img-gallery .row{
+    margin-bottom:10px;
+}
+
+
+/* CURRENT MEMEBERS */
