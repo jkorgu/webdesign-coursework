@@ -54,10 +54,16 @@
 
                     <label for="fileAttach">Attach a file:</label>
                     <input type="file" id="fileAttach" name="fileAttach" multiple/> <br/>
-                    <input type="submit">
+                    
+
+                    <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
 
                 </fieldset>
             </form>
+        </div>
+
+        <div>
+            <p id="form_outcome"></p>
         </div>
 
         <div id="right-col">

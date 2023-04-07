@@ -16,8 +16,34 @@
 <body>
 
     <header>
+
         <h1>RGU Esports</h1>
-        <img id="logo" src="images/rgulogo.jpg"/>       
+        <img id="logo" src="images/rgulogo.jpg"/> 
+        
+        <!--Log In-->
+        <form style="float: right;" name="loginField">
+            <fieldset>
+                <input id="email" type="text" value="" placeholder="email">
+                <input id="password" type="text" value="" placeholder="password">
+                <button type="button" onclick="alert('You have been logged in!')">Login</button>
+
+                <script>
+                    var counter = 2;
+
+                    function login(){
+                        if(counter % 2 == 0){
+                            alert('You have been logged in!');
+                        }
+                        else{
+                            alert('You have been logged out!');
+                        }
+                        counter+=1;
+                    }
+                </script>
+
+            </fieldset>
+        </form>
+
     </header>
 
 

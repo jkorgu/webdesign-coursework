@@ -40,29 +40,31 @@
 
             <div class="row"> <!--ROW ONE-->
                 <div class="col-sm">
-                    <img src="images/crowd.jpg" class="gallery-img" alt="IEM Rio Major crowd"/>
+                    <img src="images/crowd.jpg" id="img-gallery1" class="gallery-img" alt="IEM Rio Major crowd"/>
                 </div>
                 <div class="col-sm">
-                    <img src="images/trophyshot.jpg" class="gallery-img" alt="IEM Rio Major trophy"/>
+                    <img src="images/trophyshot.jpg" id="img-gallery2" class="gallery-img" alt="IEM Rio Major trophy"/>
                 </div>
                 <div class="col-sm">
-                    <img src="images/mouse.jpg" class="gallery-img" alt="Close up of a player's mouse"/>
+                    <img src="images/mouse.jpg" id="img-gallery3" class="gallery-img" alt="Close up of a player's mouse"/>
                 </div>
             </div>
                 
             <div class="row"> <!--ROW TWO-->
                 <div class="col-sm">
-                    <img src="images/arena.jpg" class="gallery-img" alt="Cologne arena"/>
+                    <img src="images/arena.jpg" id="img-gallery4" class="gallery-img" alt="Cologne arena"/>
                 </div>
                 <div class="col-sm">
-                    <img src="images/crowdclose.jpg" class="gallery-img" alt="IEM Rio crowd close up"/>
+                    <img src="images/crowdclose.jpg" id="img-gallery5" class="gallery-img" alt="IEM Rio crowd close up"/>
                 </div>
                 <div class="col-sm">
-                    <img src="images/deskshot.jpg" class="gallery-img" alt="Behind the pro"/>
+                    <img src="images/deskshot.jpg" id="img-gallery6" class="gallery-img" alt="Behind the pro"/>
                 </div>
             </div>
 
         </div>
+
+
 
     </main>
 
@@ -72,6 +74,32 @@
     </aside>
 
     <footer>Copyright Jakub Olbrisch </footer>
+
+
+    <script>
+
+        document.getElementById("img-gallery1").addEventListener("mouseover", highlight);
+        document.getElementById("img-gallery1").addEventListener("mouseout", delight);
+
+        function highlight() {
+            document.getElementById("img-gallery1").style="border: solid blue 2px;"
+        }
+
+        function delight() {
+            document.getElementById("img-gallery1").style="border: none;"
+        }
+
+        document.getElementById("img-gallery2").addEventListener("mouseover", highlight);
+        document.getElementById("img-gallery2").addEventListener("mouseout", delight);
+
+        function highlight2() {
+            document.getElementById("img-gallery2").style="border: solid blue 2px;"
+        }
+
+        function delight2() {
+            document.getElementById("img-gallery2").style="border: none;"
+        }
+    </script>
 
 
 </body>
