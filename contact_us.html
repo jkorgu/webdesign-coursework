@@ -1,10 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <title>RGU Esports</title>
 
-     <title>RGU Esports</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <!--CSS + FONTS-->
+    <!--CSS and Font(s)-->
     <link rel='stylesheet' href='css/main.css'>
     <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
 
@@ -14,11 +18,37 @@
 <body>
 
     <header>
+        <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>       
-        <img id="logo" src="images/rgulogo.jpg"/>
+        <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
+
+        <!--Log In Form-->
+        <form style="float: right;" name="loginFields">
+            <fieldset>
+                <input id="email" type="text" value="" placeholder="email">
+                <input id="password" type="text" value="" placeholder="password">
+                <button type="button" onclick="alert('You have been logged in!')">Login</button>
+        
+                <script>
+                    var counter = 2;
+        
+                    function login(){
+                        if(counter % 2 == 0){
+                            alert('You have been logged in!');
+                        }
+                        else{
+                            alert('You have been logged out!');
+                        }
+                        counter+=1;
+                    }
+                </script>
+        
+            </fieldset>
+        </form>
+
     </header>
 
-    <!--Navigation-->
+    <!--Navigation bar-->
      <nav>
         <ul>
             <li><a href='index.html'>Home</a> </li>
@@ -30,32 +60,39 @@
     </nav>
 
     <main> 
+
         <div id="left-col">
             <h3>Contact Us</h3>
             <p>Use the form below, or follow us on social media.</p>
+
+            <!--Form-->
             <form>
                 <fieldset>
-                    <!--<legend>Contact Us using the below form.</legend>-->
-
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" value=""/> <br/>
-                        
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" value=""/> <br/>
-
-                    <label for="membership">Membership:</label>
-                    <label for="memberType">Member:</label>
-                    <input type="radio" name="memberType" value=""/> <br/>
-                    <label for="type">Non-member:</label>
-                    <input type="radio" name="memberType" value=""/> <br/>
-                        
-                    <label for="comment">Why you are contacting us:</label>
-                    <input type="text" name="comment" value=""/> <br/>
-
-                    <label for="fileAttach">Attach a file:</label>
-                    <input type="file" id="fileAttach" name="fileAttach" multiple/> <br/>
                     
+                    <!--Name field-->
+                    <label for="nameInput">Name:</label>
+                    <input id="nameInput" type="text" name="name" value=""> <br>
+                        
+                    <!--Email field-->
+                    <label for="emailInput">Email:</label>
+                    <input id="emailInput" type="text" name="email" value=""> <br>
 
+                    <!--Membership fields-->
+                    <label>Membership:</label>
+                    <label for="memberYes">Member:</label>
+                    <input id="memberYes" type="radio" name="memberType" value=""> <br>
+                    <label for="memberNo">Non-member:</label>
+                    <input id="memberNo" type="radio" name="memberType" value=""> <br>
+                        
+                    <!--Why contact us field-->
+                    <label for="commentInput">Why you are contacting us:</label>
+                    <input id="commentInput" type="text" name="comment" value=""> <br>
+
+                    <!--File attachment fields-->
+                    <label for="fileAttach">Attach a file:</label>
+                    <input id="fileAttach" type="file" name="fileAttach" multiple> <br>
+                    
+                    <!--Submit button-->
                     <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
 
                 </fieldset>
@@ -66,8 +103,10 @@
             <p id="form_outcome"></p>
         </div>
 
+
+        <!--Twitter timeline-->
         <div id="right-col">
-            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="600" data-theme="dark" href="https://twitter.com/ESLCS?ref_src=twsrc%5Etfw">Tweets by ESLCS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="600" data-theme="dark" href="https://twitter.com/ESLCS?ref_src=twsrc%5Etfw">Tweets by ESLCS</a> <script async src="https://platform.twitter.com/widgets.js"></script>
         </div>
 
 

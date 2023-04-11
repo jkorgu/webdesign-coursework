@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>RGU Esports</title>
@@ -7,21 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
-    <!--CSS + FONTS-->
+    <!--CSS and Font(s)-->
     <link rel='stylesheet' href='css/main.css'>
     <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
 
 </head>
 
+
 <body>
 
     <header>
-
+        <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>
-        <img id="logo" src="images/rgulogo.jpg"/> 
+        <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
         
-        <!--Log In-->
-        <form style="float: right;" name="loginField">
+        <!--Log In Form-->
+        <form style="float: right;" name="loginFields">
             <fieldset>
                 <input id="email" type="text" value="" placeholder="email">
                 <input id="password" type="text" value="" placeholder="password">
@@ -47,7 +49,7 @@
     </header>
 
 
-    <!--Navigation-->
+    <!--Navigation bar-->
     <nav> 
         <ul>
             <li class="active"><a href='index.html'>Home</a> </li>
@@ -61,13 +63,15 @@
     
     <main>  
 
+        <!--Main paragraph-->
         <div> <h3>Welcome to RGU Esports (RGUE)!</h3> 
         <p> The RGU Esports Society is RGU's digital branch of sport clubs! Both casual and competitive, if you're looking for watch parties, 
             or looking for a team to compete with, this is the place for you.</p>
-        <p>Represent RGU through many European circuits and cups with teams from all over!</p>
+        <p>Represent RGU through many European circuits and cups with teams from all over! Be it through LAN events or Online events!</p>
         </div> 
 
-            
+
+        <!--Start of carousel--> 
         <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
 
             <!--Button Indicator-->
@@ -81,7 +85,7 @@
             <!--Wrapper-->
             <div class="carousel-inner">
 
-                <!--Item 1-->
+                <!--Image 1-->
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="images/lolesports.jpg" alt="LoL Esports">
                     <div class="carousel-caption d-none d-md-block">
@@ -90,21 +94,21 @@
                     </div>
                 </div>
 
-                <!--Item 2-->
+                <!--Image 2-->
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/sofainterview.jpg" alt="FURIA Interview">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 id="white-text">EPL Season 17: FURIA</h5>
-                        <p id="white-text">A strong start for the Brazilians, how far can momentum carry them?</p>
+                        <h5 class="white-text">EPL Season 17: FURIA</h5>
+                        <p class="white-text">A strong start for the Brazilians, how far can momentum carry them?</p>
                     </div>
                 </div>
 
-                <!--Item 3-->
+                <!--Image 3-->
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/sofa.jpg" alt="A look into Polish CS">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 id="white-text">The Future of Polish CS</h5>
-                        <p id="white-text">A conversation with past and future legends, F1KU, siuhy, Snax</p>
+                        <h5 class="white-text">The Future of Polish CS</h5>
+                        <p class="white-text">A conversation with past and future legends, F1KU, siuhy, Snax</p>
                     </div>
                 </div>
 
