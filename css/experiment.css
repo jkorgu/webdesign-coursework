@@ -1,11 +1,3 @@
-/*
-Main Text Color: Black (#000000)
-Secondary Text and Reading Background Color: White (#FFFFFF)
-Background Color: "SteelBlue" (#4682B4)
-Accent and Interactive Feature Color: "Darker Purple" #36006C
-Main Color: "RebeccaPurple" (#663399)
-Font(s) used: Alexandria
-*/
 :root {
     --mainText: black;
     --secondaryText: white;
@@ -14,24 +6,12 @@ Font(s) used: Alexandria
     --mainColor: rebeccapurple;
 }
 
-
-/*
-:root {
-    --mainText: black;
-    --secondaryText: white;
-    --backgroundColor:  #9A031E;
-    --accentColor: #246A73;
-    --mainColor:  #368F8B;
-}
-*/
 body {
     background-color: var(--backgroundColor);
 }
 
 header {
     background-color: var(--secondaryText);
-    /*border-top-left-radius: 10px;
-    border-top-right-radius: 10px;*/
     padding: 2%;
     margin:5%;
     border-radius: 50%;

@@ -9,21 +9,12 @@ Font(s) used: Alexandria
 :root {
     --mainText: black;
     --secondaryText: white;
-    --backgroundColor: steelblue;
-    --accentColor: #36006C;
-    --mainColor: rebeccapurple;
+    --backgroundColor: #bdbdbd;
+    --accentColor: #1b1b1b;
+    --mainColor: #663399;
 }
 
 
-/*
-:root {
-    --mainText: black;
-    --secondaryText: white;
-    --backgroundColor:  #9A031E;
-    --accentColor: #246A73;
-    --mainColor:  #368F8B;
-}
-*/
 body {
     background-color: var(--backgroundColor);
 }
@@ -107,7 +98,6 @@ nav li a {
 }
 
 nav li:hover {
-    /*background-color: var(--accentColor);*/
     background-color: var(--mainText);
 }
 
@@ -145,10 +135,8 @@ input, label{
     font-family:'Alexandria';
 }
 
-/*input{
-    
-}*/
 
+/* Contact Us Specific */
 #left-col{
     float:left;
     background-color:var(--secondaryText);
@@ -160,7 +148,7 @@ input, label{
 }
 
 
-/*CAROUSEL + ANY CONTENT INSIDE OF IT*/
+/*  Carousel  */
 
 #home-carousel .carousel-item{
     height:100%;
@@ -177,12 +165,12 @@ input, label{
     width:100%;
 }
 
-#white-text{
-    color: white;
+
+.white-text{
+    color:white;
 }
 
-
-/* IMAGE GALLERY */
+/* Image Gallery */
 
 .gallery-img{
     width:100%;
@@ -196,6 +184,3 @@ input, label{
 #img-gallery .row{
     margin-bottom:10px;
 }
-
-
-/* CURRENT MEMEBERS */
