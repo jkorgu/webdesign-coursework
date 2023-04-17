@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RGU Esports</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <!--CSS and Font(s)-->
+    <link rel='stylesheet' href='css/main.css'>
+    <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
+
+</head>
+
+
+<body>
+
+    <header>
+        <!--Logo image and webpage title-->
+        <h1>RGU Esports</h1>
+        <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
+        
+        <!--Log In Form-->
+        <form style="float: right;" name="loginFields">
+            <fieldset>
+                <input id="email" type="text" value="" placeholder="email">
+                <input id="password" type="text" value="" placeholder="password">
+                <button type="button" onclick="alert('You have been logged in!')">Login</button>
+
+                <script>
+                    var counter = 2;
+
+                    function login(){
+                        if(counter % 2 == 0){
+                            alert('You have been logged in!');
+                        }
+                        else{
+                            alert('You have been logged out!');
+                        }
+                        counter+=1;
+                    }
+                </script>
+
+            </fieldset>
+        </form>
+
+    </header>
+
+
+    <!--Navigation bar-->
+    <nav> 
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='img_gallery.html'>Gallery</a></li>
+            <li><a href='current_members.html'>Current Members</a></li>
+            <li><a href='event_calendar.html'>Events</a></li>
+            <li><a href='contact_us.html'>Contact Us</a></li>
+            <li class="active"><a href='games.html'>Games</a></li>
+            <li><a href='teams.html'>Our Teams</a></li>
+            <li><a href='community_night.html'>Community Night</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>  
+
+        <!--Main paragraph-->
+        <div> <h3>Games we are represented in</h3> 
+        <p> Esports is a rather new and ever-so expansive space in the worlds of entertainment and competition, here you will find all the information about 
+            the games we field rosters in.
+        </p>
+        </div> 
+
+        <!--Collapsable Information-->
+        <div class="accordion" id="accordionGames">
+
+            <!--Info Area 1-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Esports Explained
+                </button>
+              </h2>
+
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionGames">
+                <div class="accordion-body">
+
+                  <strong>Why do online and offline co-exist?</strong>
+                  <p>Online events exist as a means of supporting the lower level tiers of competition, as setting up areas with capable PCs, player peripherals and viewieng areas is expensive and hard.
+                    <br>Another reason being that video games are played primarily online, so it isn't unfamiliar for gamers to be used to a set up like this, however a big downside to this format is "Ping".
+                    <br>Ping, is the internet connection which allows all players to play together against each other, the higher the ping the less smooth and fair the experience becomes sadly.
+
+                    <br><br>However, concerning any top level competition, everything surrounding it is required to be in top condition so the competitors can reach their peak form.
+                    <br>This is where offline competitions come in, most commonly present in arenas with huge prize pools, the players eliminate the negative aspect of ping which is present online.
+                    <br>The tournament organisers are able to put on a show, and much like a concert, make money off of it and continue in supporting the scene and keeping it entertaining.
+                  </p>
+
+                  <strong>What do you mean by "lower level tiers"?</strong>
+                  <p>Esports are accessible to everyone, much like Football, if you have the equipment for it, nothing is stopping you in competing.
+                    <br>Continuing with the Football comparisons, most Esports are in a tier system, which mimics the Footballing pyramid very closely.
+                    <br>Your local LANs may be one off events, or part of a bigger local circuit, or even national. The tier of it really depends on the organiser, and the level of competition.
+                    <br>This applies to online cups too, the prestige here is usually through the level of competition, prize money and organisers of the event.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Info Area 2-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Counter Strike: Global Offensive (CSGO)
+                </button>
+              </h2>
+
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionGames">
+                <div class="accordion-body">
+
+                  <strong>CSGO at it's simplest</strong>
+                  <p>CSGO is known as the Football of Esports, easy to pick up however impossible to master. You could understand the basic premise of it by watching 1 game with no knowledge.
+                    <br>But this article would be useless if you did that. CSGO at it's simplest is a 5 versus 5 team game, with both sides having near identical equipment.
+                    <br>The equipment consists of guns, grenades and body armor. The gameplay consists of the players shooting at each other trying to kill each other first.
+                    <br>
+                    <br>The game puts each group of players into a team with a different objective from their opposite. The teams consist of "CT" and "T" sides.
+                    <br>Both teams can score a round win by eliminating the other team entirely in 1 round, with each group of players racing to get 16 points before the other group.
+                    <br>However there are additional objectives, the CT side aims to stop the T side from planting and exploding a bomb on 1 of 2 bombsites on the map, whilst the T side obviously tries to blow the place up.
+                    <br>
+                    <br>There is much more to the game, such as the guns the teams can buy with in-game money, and the strategic depth behind the grenades and map rotations, however that will be covered at a later date.
+                  </p>
+
+                  <strong>In-game Roles</strong>
+                  <p>Once again continuing with Football, each teammate has their own role in CSGO. Of course you can assemble all your friends together and just play however you want, but for competiton it's advise to follow roles.
+                    <br><br>The first role we'll cover is <strong>In-Game Leader (IGL)</strong>
+                    <br>The IGL is the brains of the team, the captain. They dictate what the rest of the team does, and depending on how your team plays, he may be the only one talking a lot of the time, or you can all contribute to
+                    <br>their ideas too.
+                    <br>In Top tier competition, the IGL is usually the least impactful player on the server, with the lowest kills and highest deaths, however that is a stereotype that isn't 100% true, but quite accurate. That's not
+                    <br>to say the IGL is a role for a bad mechanical player, but that they are so pre-occupied with managing their 4 teammates and understanding the enemies setups and trying to counter them, like a game of Chess.
+
+                    <br><br>The second role we'll cover is the <strong>Awper (Sniper)</strong>
+                    <br>The AWP is an expensive in-game weapon, with very high risk and very high reward. Nothing really dictates if you're an Awper or not, it just comes down to how good you are with it. This role is much less cemented
+                    <br>in team structure as rarely even Awpers give up their beloved sniper to a teammate, for many reasons. Ultimately a successful team is a team with a great Awper, as the way CSGO is played, the Awper is the Chess Queen
+                    <br>equivalent.
+
+                    <br><br>The last general role we'll cover is the <strong>Rifler (Lurker, Entry, Support, Star Player)</strong>
+                    <br>The rifler is a very broad term and consists of many smaller roles, the IGL and 3 other players all play with rifles (such as the AK or M4) whilst the Awper uses their sniper when possible, but will rifle when they can't.
+                    <br>Riflers are most commonly split into a: Lurker, Entry Fragger and Support role. They all use the same equipment but do different stuff on the map.
+                    <br>The Lurker, for example, roams the map queitly, trying to find gaps in the formations of the enemy team and be in areas where unexpected, gathering information and hopefully 1 or 2 kills with him.
+                    <br>The Entry player is the first man in when a fight starts, their aim is to throw themselves at the enemy team and hope to take down as many with him as possible, creating as much space for the rest of the team to follow up on.
+                    <br>The Support role is very broad, usually one of the last 2 alive, cleaning up the mess left behind by their teammates, holding all the grenades and allowing their teammates to shine in their respective roles.
+                    <br>The star player of the team usually is an Awper or rifler, but only when they are specifically a rifler are they referred to as a star, this just means they're the best on their team.
+                    
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Info Area 3-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  League of Legends (LoL)
+                </button>
+              </h2>
+
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionGames">
+                <div class="accordion-body">
+                  
+                    <strong>LoL at it's simplest</strong>
+                    <p>LoL is a very complicated game, with many "champions" (characters the player plays as), items and spells.
+                        <br>At it's simplest, the map is split into 3 lanes, with areas inbetween known as the "Jungle", with 2 teams consisting of 5 players, they both aim to breach the base of the enemy team and destroy their "Nexus".
+                        <br>The lanes are known as "Top", "Mid", and "Bot". The naming scheme follows their location relative from the player's perspective, which is locked to a bird's eye view.
+                        <br>The players get more powerful by eliminating the enemy team, destroying enemy towers and their minions. The power comes from the items they purchase with Gold that they receive from the previous elements I mentioned.
+                    </p>
+
+                    <strong>Roles explained</strong>
+                    <p>There are 5 distinct roles players have to choose before each match, they consist of: Top, Jungler, Mid, ADC, Support.
+                        <br><br>
+                        <strong>Role: Top</strong>
+                        <br>This role consists of the player fighting in the Top lane, against 1 other person. Both trying to achieve the simplest objectives mentioned previously. Top players usually select champions who are strong and tough in nature, "tanky".
+                        <br>They will be one of 2 meatshields in the team later on. They can do a lot of damage however most of the time they are more like a utility, setting up fights by stunning the enemies and tanking their attacks.
+                        <br><br>
+                        <strong>Role: Jungler</strong>
+                        <br>Junglers roam the whole map, spending most of their time in the Jungle killing monsters to gain gold and xp. Their job is to help their teammates when they're struggling or wanting to go for risky attacks.
+                        <br>Simply, junglers provide a "strength in numbers" help for the other roles, whilst very powerful by themselves too, they are a glass cannon of the team most of the time, but are flexible enough to be a utility role too.
+                        <br><br>
+                        <strong>Role: Mid</strong>
+                        <br>Mid players play in the Mid lane. Usually ranged, with strong attacks and not the most health, they're crucial to the success of the team, as a powerful Mid is able to take over any game.
+                        <br><br>
+                        <strong>Role: ADC</strong>
+                        <br>The Adc (Attack Damage Carry) is exactly what the name entails, they carry their team through their sheer attack power. Usually ranged like the mid, they are supposed to be the hardest hitting players on the map at any moment.
+                        <br>Basically walking around as a glass cannon, a strong ADC is able to control the tempo of the game through their actions. They play in the Bot lane with the next role.
+                        <br><br>
+                        <strong>Role: Support</strong>
+                        <br>The Support role is a duo with the ADC role, also playing in the Bot lane, their goal is to support the team through utility much like the Top player, but with less damage and more health.
+                        <br>Supports are crucial as early on they can help their ADC's momentum to becoming unstoppable, whilst also being able to help the Jungler with map control.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Info Area 4-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Rocket League (RL)
+                  </button>
+                </h2>
+  
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionGames">
+                  <div class="accordion-body">
+                    <strong>Rocket League at it's simplest.</strong>
+                    <p>Rocket League is the closest thing to a real sport, it's a 3 versus 3 car football game.
+                        <br>The objective is to score goals, with each player controlling an RC car which can pick up boosts on the map, to move around quicker and even fly to an extent.
+                        <br>In Esports there is truly nothing more simple than this game.
+                    </p>
+
+                    <strong>Rocket League Roles</strong>
+                    <p>Rocket league is a very unique Esport, as the team is small consisting of only 3 players, the fast and fluid gameplay also doesn't provide for an opportunity to really specialise as a player, you are just expected to do everything.
+                        <br>Between your teammates in less competitive environments you can have roles, such as 1 goalkeeper and 2 attackers, quite self explanitory. However in pro play you are all of those combined.
+                        <br>Communication is crucial as you always have to be stocked up on boost, so you're able to play the game really whilst keeping the ball away from your goal and trying to put it in the other team's net.
+                        <br>You will be rotating up and down the field depending on the position of your teammates, the opposition and the ball.
+                    </p>
+                </div>
+              </div>
+
+        </div>
+    </main>
+
+    <aside>
+
+    </aside>
+
+    <footer>Copyright Jakub Olbrisch 2023</footer>
+    
+
+</body>
+
+
+</html>
