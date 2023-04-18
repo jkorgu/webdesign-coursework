@@ -24,8 +24,11 @@ header {
     background-color: var(--secondaryText);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px;
+    padding:10px;
     border:16px;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
 }
 
 #logo{
@@ -86,19 +89,19 @@ nav ul{
 
 nav li {
     border:2px, solid;
-    border-color: var(--borderColor);
     background-color: var(--mainColor);
     list-style-type: none;
     float:left;
     width:10%;
     padding:16px;
     text-align:center;
+    /*margin-left:5px; TEMP FIX FOR BORDER */
 }
 
 nav li a {
     color: var(--secondaryText);
-    text-align: center;
     text-decoration: none;
+    font-size:large;
 }
 
 nav li:hover {
@@ -164,7 +167,8 @@ input, label{
 
 #right-col{
     float:right;
-    padding:3%;
+    padding-right:3%;
+    padding-bottom:3%;
 }
 
 

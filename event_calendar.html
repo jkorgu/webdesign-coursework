@@ -40,19 +40,7 @@
                 <input id="password" type="text" value="" placeholder="password">
                 <button type="button" onclick="alert('You have been logged in!')">Login</button>
         
-                <script>
-                    var counter = 2;
-        
-                    function login(){
-                        if(counter % 2 == 0){
-                            alert('You have been logged in!');
-                        }
-                        else{
-                            alert('You have been logged out!');
-                        }
-                        counter+=1;
-                    }
-                </script>
+                <script src="scripts/login.js"></script>
         
             </fieldset>
         </form>
@@ -261,23 +249,7 @@
 </body>
 
 
-<script>
-    function submit_event() {
-        var title = document.forms["events"]["event_title"].value;
-        var date = document.forms["events"]["event_date"].value;
-        if (title =="") {
-            alert("An event must have a titlte!");
-        }
-        else {
-            if (date.lenhth == 0) {
-                alert("An event must have a date!");
-            }
-            else {
-                alert("Event submitted! The society will contact you soon!");
-            }
-        }
-    }
-</script>
+<script src="scripts/eventCalendar.js"></script>
 
 
 </html>
