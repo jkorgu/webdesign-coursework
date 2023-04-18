@@ -12,8 +12,9 @@
         Threat Mitigation: A verification system for changing elements of the website, 2FA.
     -->
 
-
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -30,21 +31,10 @@
 <body>
 
     <header>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1> 
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo"> 
-        
-        <!--Log In Form-->
-        <form style="float: right;" name="loginFields">
-            <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-        
-                <script src="scripts/login.js"></script>
-        
-            </fieldset>
-        </form>
 
     </header>
 
@@ -69,27 +59,51 @@
         <div id="img-gallery" class="container">
 
             <div class="row"> <!--ROW ONE-->
+
                 <div class="col-sm">
                     <img src="images/crowd.jpg" id="img-gallery1" class="gallery-img" alt="IEM Rio Major crowd">
                 </div>
+
                 <div class="col-sm">
                     <img src="images/trophyshot.jpg" id="img-gallery2" class="gallery-img" alt="IEM Rio Major trophy">
                 </div>
+
                 <div class="col-sm">
                     <img src="images/mouse.jpg" id="img-gallery3" class="gallery-img" alt="Close up of a player's mouse">
                 </div>
+
             </div>
                 
             <div class="row"> <!--ROW TWO-->
+
                 <div class="col-sm">
                     <img src="images/arena.jpg" id="img-gallery4" class="gallery-img" alt="Cologne arena">
                 </div>
+
                 <div class="col-sm">
                     <img src="images/crowdclose.jpg" id="img-gallery5" class="gallery-img" alt="IEM Rio crowd close up">
                 </div>
+
                 <div class="col-sm">
                     <img src="images/deskshot.jpg" id="img-gallery6" class="gallery-img" alt="Behind the pro">
                 </div>
+
+            </div>
+
+            <div class="row"> <!--ROW THREE-->
+
+                <div class="col-sm">
+                    <img src="images/banks.jpg" id="img-gallery7" class="gallery-img" alt="Cologne arena">
+                </div>
+
+                <div class="col-sm">
+                    <img src="images/crowdwalk.jpg" id="img-gallery8" class="gallery-img" alt="IEM Rio crowd close up">
+                </div>
+
+                <div class="col-sm">
+                    <img src="images/chad.jpg" id="img-gallery9" class="gallery-img" alt="Behind the pro">
+                </div>
+
             </div>
 
         </div>
@@ -99,86 +113,10 @@
     </main>
 
 
-    <aside> 
-
-    </aside>
-
     <footer>Copyright Jakub Olbrisch 2023 </footer>
 
     <!--Image scripts-->
-    <script>
-        //Image 1
-        document.getElementById("img-gallery1").addEventListener("mouseover", highlight);
-        document.getElementById("img-gallery1").addEventListener("mouseout", delight);
-
-        function highlight() {
-            document.getElementById("img-gallery1").style="border: solid blue 2px;"
-        }
-
-        function delight() {
-            document.getElementById("img-gallery1").style="border: none;"
-        }
-
-        //Image 2
-        document.getElementById("img-gallery2").addEventListener("mouseover", highlight2);
-        document.getElementById("img-gallery2").addEventListener("mouseout", delight2);
-
-        function highlight2() {
-            document.getElementById("img-gallery2").style="border: solid blue 2px;"
-        }
-
-        function delight2() {
-            document.getElementById("img-gallery2").style="border: none;"
-        }
-
-        //Image 3
-        document.getElementById("img-gallery3").addEventListener("mouseover", highlight3);
-        document.getElementById("img-gallery3").addEventListener("mouseout", delight3);
-
-        function highlight3() {
-            document.getElementById("img-gallery3").style="border: solid blue 2px;"
-        }
-
-        function delight3() {
-            document.getElementById("img-gallery3").style="border: none;"
-        }
-
-        //Image 4
-        document.getElementById("img-gallery4").addEventListener("mouseover", highlight4);
-        document.getElementById("img-gallery4").addEventListener("mouseout", delight4);
-
-        function highlight4() {
-            document.getElementById("img-gallery4").style="border: solid blue 2px;"
-        }
-
-        function delight4() {
-            document.getElementById("img-gallery4").style="border: none;"
-        }
-
-        //Image 5
-        document.getElementById("img-gallery5").addEventListener("mouseover", highlight5);
-        document.getElementById("img-gallery5").addEventListener("mouseout", delight5);
-
-        function highlight5() {
-            document.getElementById("img-gallery5").style="border: solid blue 2px;"
-        }
-
-        function delight5() {
-            document.getElementById("img-gallery5").style="border: none;"
-        }
-
-        //Image 6
-        document.getElementById("img-gallery6").addEventListener("mouseover", highlight6);
-        document.getElementById("img-gallery6").addEventListener("mouseout", delight6);
-
-        function highlight6() {
-            document.getElementById("img-gallery6").style="border: solid blue 2px;"
-        }
-
-        function delight6() {
-            document.getElementById("img-gallery6").style="border: none;"
-        }
-    </script>
+    <script src="scripts/imageFadeGallery.js"></script>
 
 
 </body>

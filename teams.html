@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!--
+        Threat Model
+
+        No Potential Threat Spotted
+    -->
+
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -18,22 +26,11 @@
 <body>
 
     <header>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
         
-        <!--Log In Form-->
-        <form style="float: right;" name="loginFields">
-            <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-
-                <script src="scripts/login.js"></script>
-
-            </fieldset>
-        </form>
-
     </header>
 
 
@@ -52,28 +49,272 @@
     </nav>
 
     
-    <main>  
+    <main>
+        <!--Intro paragraph-->
+        <div>
+            <h3>Stats Page</h3>
+            <p>Here we provide and update the stats of our teams every time they have finished playing, analyse and see how everyone's performing out there!</p>
+        </div>
 
-        <!--Main paragraph-->
-        <div> <h3>Team performance</h3> 
-        <p> Counter Strike: Global Offensive:
-        </p>
+
+        <!--Simple Stats-->
+        <div><h3 class="centerH3">Simple Player Performance(Last Set)</h3></div>
+
+        <!--Puts all the lists together into 1 box, side by side-->
+        <div class="simpleStatBox">
+
+            <!--CSGO Section-->
+            <div class="simpleStat">
+                <ul class="csgoStats">
+                    <li class="csgoGood">Joe's Rating: 1.20</li>
+                    <li class="csgoBad">John's Rating: 0.78</li>
+                    <li class="csgoGood">Hugh's Rating: 1.35</li>
+                    <li class="csgoBad">Russ's Rating: 0.98</li>
+                    <li class="csgoGood">Casper's Rating: 1.08</li>
+                </ul>
+            </div>
+
+            <!--LoL Section-->
+            <div class="simpleStatMid">
+                <ul class="lolStats">
+                    <li class="lolGood">Adam's KDA Ratio: 25.0</li>
+                    <li class="lolGood">Brendan's KDA Ratio: 4.2</li>
+                    <li class="lolBad">William's KDA Ratio: 3.4</li>
+                    <li class="lolBad">Henry's KDA Ratio: 2.8</li>
+                    <li class="lolBad">Nicholas's KDA Ratio: 1.8</li>
+                </ul>
+            </div>
+
+            <!--RL Section-->
+            <div class="simpleStat">
+                <ul class="rlStats">
+                    <li class="rlGood">Gabriel's Rating: 1.04</li>
+                    <li class="rlBad">George's Rating: 0.67</li>
+                    <li class="rlBad">Zack's Rating: 0.82</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!--Lines up all the buttons together and uses Javascript to alter text appearance-->
+        <div class="buttonStat">
+            <script src="scripts/teamTable.js"></script>
+            <button type="button" onclick="statsHighlightCSGO()">CSGO</button>
+            <button type="button" onclick="statsHighlightLOL()">LoL</button>
+            <button type="button" onclick="statsHighlightRL()">RL</button>
+            <p>Click these buttons to change the colour to standard black</p>
+        </div>
+
+
+        <!--Detailed Stats section full of tables with information.-->
+        <div> <h3 class="centerH3">Detailed Player performance(Last Set)</h3> 
+     
+            <!--CSGO Table-->
+            <h4>Counter Strike: Global Offensive</h4>
+
+            <table>
+
+                <!--Top row (Stat categories)-->
+                <tr>
+                    <th>Players</th>
+                    <th>Kills</th>
+                    <th>Deaths</th>
+                    <th>+/-</th>
+                    <th>ADR</th>
+                    <th>Rating (2.0 HLTV)</th>
+                </tr>
+
+                <!--Player 1-->
+                <tr>
+                    <th>Joe</th>
+                    <!--Kills-->    <td>44</td>
+                    <!--Deaths-->   <td>40</td>
+                    <!-- +/- -->    <td>+4</td>
+                    <!--ADR-->      <td>87.7</td>
+                    <!--Rating-->   <td class="goodStat">1.20</td>
+                </tr>
+
+                <!--Player 2-->
+                <tr>
+                    <th>John</th>
+                    <!--Kills-->    <td>25</td>
+                    <!--Deaths-->   <td>38</td>
+                    <!-- +/- -->    <td>-13</td>
+                    <!--ADR-->      <td>50.8</td>
+                    <!--Rating-->   <td class="badStat">0.78</td>
+                </tr>
+
+                <!--Player 3-->
+                <tr>
+                    <th>Hugh</th>
+                    <!--Kills-->    <td>45</td>
+                    <!--Deaths-->   <td>25</td>
+                    <!-- +/- -->    <td>+20</td>
+                    <!--ADR-->      <td>95.1</td>
+                    <!--Rating-->   <td class="goodStat">1.35</td>
+                </tr>
+
+                <!--Player 4-->
+                <tr>
+                    <th>Russ</th>
+                    <!--Kills-->    <td>30</td>
+                    <!--Deaths-->   <td>32</td>
+                    <!-- +/- -->    <td>-2</td>
+                    <!--ADR-->      <td>62.0</td>
+                    <!--Rating-->   <td class="badStat">0.98</td>
+                </tr>
+
+                <!--Player 5-->
+                <tr>
+                    <th>Casper</th>
+                    <!--Kills-->    <td>40</td>
+                    <!--Deaths-->   <td>41</td>
+                    <!-- +/- -->    <td>-1</td>
+                    <!--ADR-->      <td>88.8</td>
+                    <!--Rating-->   <td class="goodStat">1.08</td>
+                </tr>
+
+            </table>
 
         
+        </div>
+        
+
+        <!--LoL Table-->
+        <div> 
+            <h4>
+            League of Legends
+            </h4>
+    
+                <table>
+    
+                    <!--Top row (Stat categories)-->
+                    <tr>
+                        <th>Players</th>
+                        <th>Kills</th>
+                        <th>Deaths</th>
+                        <th>+/-</th>
+                        <th>Assists</th>
+                        <th>KDA Ratio</th>
+                    </tr>
+    
+                    <!--Player 1-->
+                    <tr>
+                        <th>Adam</th>
+                        <!--Kills-->        <td>9</td>
+                        <!--Deaths-->       <td>1</td>
+                        <!-- +/- -->        <td>+8</td>
+                        <!--Assists-->      <td>16</td>
+                        <!--KDA Ratio-->    <td class="goodStat">25.0</td>
+                    </tr>
+    
+                    <!--Player 2-->
+                    <tr>
+                        <th>Brendan</th>
+                        <!--Kills-->        <td>10</td>
+                        <!--Deaths-->       <td>11</td>
+                        <!-- +/- -->        <td>-1</td>
+                        <!--Assists-->      <td>36</td>
+                        <!--KDA Ratio-->    <td class="goodStat">4.2</td>
+                    </tr>
+    
+                    <!--Player 3-->
+                    <tr>
+                        <th>William</th>
+                        <!--Kills-->        <td>17</td>
+                        <!--Deaths-->       <td>11</td>
+                        <!-- +/- -->        <td>+6</td>
+                        <!--Assists-->      <td>20</td>
+                        <!--KDA Ratio-->    <td class="badStat">3.4</td>
+                    </tr>
+    
+                    <!--Player 4-->
+                    <tr>
+                        <th>Henry</th>
+                        <!--Kills-->        <td>18</td>
+                        <!--Deaths-->       <td>13</td>
+                        <!-- +/- -->        <td>+5</td>
+                        <!--Assists-->      <td>18</td>
+                        <!--KDA Ratio-->    <td class="badStat">2.8</td>
+                    </tr>
+    
+                    <!--Player 5-->
+                    <tr>
+                        <th>Nicholas</th>
+                        <!--Kills-->        <td>8</td>
+                        <!--Deaths-->       <td>17</td>
+                        <!-- +/- -->        <td>-9</td>
+                        <!--Assists-->      <td>22</td>
+                        <!--KDA Ratio-->    <td class="badStat">1.8</td>
+                    </tr>
+    
+                </table>
+
+        </div>
+
+        <!--RL Table-->
+        <div>
+
+            <h4>Rocket League</h4>
+            
+                <table>
+            
+                    <!--Top row (Stat categories)-->
+                    <tr>
+                        <th>Players</th>
+                        <th>Goals</th>
+                        <th>Assists</th>
+                        <th>Saves</th>
+                        <th>Shots</th>
+                        <th>Rating(1.0)</th>
+                    </tr>
+            
+                    <!--Player 1-->
+                    <tr>
+                        <th>Gabriel</th>
+                        <!--Goals-->        <td>0.67</td>
+                        <!--Assists-->      <td>0.83</td>
+                        <!--Saves-->        <td>1.83</td>
+                        <!--Shots-->        <td>3.00</td>
+                        <!--Rating-->       <td class="goodStat">1.04</td>
+                    </tr>
+            
+                    <!--Player 2-->
+                    <tr>
+                        <th>George</th>
+                        <!--Goals-->        <td>0.17</td>
+                        <!--Assists-->      <td>0.67</td>
+                        <!--Saves-->        <td>0.83</td>
+                        <!--Shots-->        <td>1.50</td>
+                        <!--Rating-->       <td class="badStat">0.67</td>
+                    </tr>
+            
+                    <!--Player 3-->
+                    <tr>
+                        <th>Zack</th>
+                        <!--Goals-->        <td>0.71</td>
+                        <!--Assists-->      <td>0.00</td>
+                        <!--Saves-->        <td>1.86</td>
+                        <!--Shots-->        <td>3.71</td>
+                        <!--Rating-->       <td class="badStat">0.82</td>
+                    </tr>
+
+                </table>
+    
+            
         </div> 
 
+        <!--HLTV Twitter Section-->
+        <div>
+            <h6 id="centerH6">Stats provided by HLTV</h6>
+        </div>
 
+        <div class="twitterCenter">
+             <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">.<a href="https://twitter.com/broky?ref_src=twsrc%5Etfw">@broky</a> arrives in Rio with a 2.02 rated performance in <a href="https://twitter.com/FaZeClan?ref_src=twsrc%5Etfw">@FaZeClan</a>&#39;s opening game on Overpass <a href="https://t.co/keZnooaHmb">pic.twitter.com/keZnooaHmb</a></p>&mdash; HLTV.org (@HLTVorg) <a href="https://twitter.com/HLTVorg/status/1648033014377508883?ref_src=twsrc%5Etfw">April 17, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
 
-
-
-
-        
-            
     </main>
 
-    <aside>
-
-    </aside>
 
     <footer>Copyright Jakub Olbrisch 2023 </footer>
     

@@ -12,8 +12,9 @@
         Threat Mitigation: A verification system for logging in, such as 2FA.
     -->
 
-
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -30,6 +31,9 @@
 <body>
 
     <header>
+
+        <script src="scripts/login.js"></script>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
@@ -37,11 +41,10 @@
         <!--Log In Form-->
         <form style="float: right;" name="loginFields">
             <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-
-                <script src="scripts/login.js"></script>
+                <input id="emailField" type="text" value="" placeholder="email" name="email" required>
+                <input id="passwordField" type="text" value="" placeholder="password" name="password" required>
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="logout()">Logout</button>
 
             </fieldset>
         </form>
@@ -137,17 +140,16 @@
             
     </main>
 
+    <!--Article section-->
     <aside>
         <p><br></p>
         <article>
             <div class="article">
-                <img class="articleImage" src="images/nsenews.jpg" alt="Spring Finals LoL Preview">
-            </div>
+                <img class="articleImage" src="images/hltv.jpg" alt="Spring Finals LoL Preview">
 
-            <div class="asideContent">
-                <h3>BUEC Spring 2023 Finals Preview - LoL</h3>
-                <p>With the BUEC Spring 2023 Finals right around the corner, here we have an official preview of the first day.
-                    Our LoL team will be representing RGU on the Saturday, and hopefully Sunday should they make it further into the bracket.
+                <h3>HLTV Release Top 20 Players of 2022 List</h3>
+                <p>With the 2022 season officially over for Counter Strike, we head on into the new year with a list of greats from the previous.
+                <br>Will they be able to hold onto this honour for another year? Or will new stars rise up to replace them? Check out their list to see if you agree with the rankings.
                 </p>
             </div>
         </article>

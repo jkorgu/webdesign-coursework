@@ -13,6 +13,8 @@
     -->
 
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -29,22 +31,11 @@
 <body>
 
     <header>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>     
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo"> 
         
-        <!--Log In Form-->
-        <form style="float: right;" name="loginFields">
-            <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-        
-                <script src="scripts/login.js"></script>
-        
-            </fieldset>
-        </form>
-
     </header>
 
 
@@ -215,19 +206,23 @@
             </table>
         </div>   
         
-        <div>
+        <!--Event recommendation form-->
+        <div class="recommendEvents">
             <p>Want to recommend an event? Tell us below!</p>
 
             <form name="events">
                 <fieldset>
 
+                    <!--Event Title Field-->
                     <label for="event_title">Event Title:</label>
                     <input id="eventTitle" type="text" name="event_title" value="">
 
 
+                    <!--Event Date Field-->
                     <label for="event_date">Event Date:</label>
                     <input id="eventDate" type="date" name="event_date">
 
+                    <!--Event Submition button-->
                     <button type="submit" onclick="submit_event()">Submit Event</button>
  
                 </fieldset>
@@ -237,19 +232,12 @@
     </main>
 
 
-    <aside> 
-
-    </aside>
-
-
-
     <footer>Copyright Jakub Olbrisch 2023 </footer>
 
 
+    <script src="scripts/eventCalendar.js"></script>
+
 </body>
-
-
-<script src="scripts/eventCalendar.js"></script>
 
 
 </html>

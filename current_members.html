@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
     <!--
         Threat Model
 
@@ -13,8 +12,9 @@
         Threat Mitigation: A verification system for changing elements of the website, 2FA.
     -->
 
-
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -31,21 +31,11 @@
 <body>
 
     <header>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>       
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
 
-        <!--Log In Form-->
-        <form style="float: right;" name="loginFields">
-            <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-        
-                <script src="scripts/login.js"></script>
-        
-            </fieldset>
-        </form>
     </header>
 
 
@@ -74,35 +64,35 @@
                 <!--Member 1-->
                 <div class="col-sm">
                     <h5>General Manager</h5>
-                    <img src="images/faze.jpg" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="Faze logo">
-                    <h5>FaZeFan87</h5>
+                    <img src="images/g2.jpg" id="member1" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="Faze logo">
+                    <h5>G2Fan87</h5>
                 </div>
 
                 <!--Member 2-->
                 <div class="col-sm">
                     <h5>LoL Coach</h5>
-                    <img src="images/teamliquid.jpg" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="Team Liquid logo">
+                    <img src="images/teamliquid.jpg" id="member2" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="Team Liquid logo">
                     <h5>LiquidFan43</h5>
                 </div>
 
                 <!--Member 3-->
                 <div class="col-sm">
                     <h5>CS Coach</h5>
-                    <img src="images/virtuspro.jpg" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="VirtusPro logo">
+                    <img src="images/virtuspro.jpg" id="member3" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="VirtusPro logo">
                     <h5>VirtusProFan28</h5>
                 </div>
 
                 <!--Member 4-->
                 <div class="col-sm">
                     <h5>RL Coach</h5>
-                    <img src="images/tyloo.jpg" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="TyLoo logo">
+                    <img src="images/tyloo.jpg" id="member4" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="TyLoo logo">
                     <h5>TyLooFan88</h5>
                 </div>
 
                 <!--Member 5-->
                 <div class="col-sm">
                     <h5>View Party Organiser</h5>
-                    <img src="images/00nation.jpg" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="00nation logo">
+                    <img src="images/00nation.jpg" id="member5" class="rounded-circle massie-hovering" width="120" height="120" style="overflow:hidden" alt="00nation logo">
                     <h5>00nationFan11</h5>
                 </div>
 
@@ -112,11 +102,8 @@
 
     </main>
 
-
-
-    <aside> 
-
-    </aside>
+    <!--Script for Image Fade-->
+    <script src="scripts/imageFadeCurrentMembers.js"></script>
 
 
 

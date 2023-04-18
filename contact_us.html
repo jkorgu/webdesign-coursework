@@ -13,6 +13,8 @@
     -->
 
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -29,23 +31,13 @@
 <body>
 
     <header>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>       
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
 
-        <!--Log In Form-->
-        <form style="float: right;" name="loginFields">
-            <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-        
-                <script src="scripts/login.js"></script>
-        
-            </fieldset>
-        </form>
-
     </header>
+
 
     <!--Navigation bar-->
      <nav>
@@ -63,12 +55,13 @@
 
     <main> 
 
+        <!--Moves everything to the left side inside this div-->
         <div id="left-col">
             <h3>Contact Us</h3>
             <p>Use the form below, or follow us on social media.</p>
 
             <!--Form-->
-            <form>
+            <form class="contactForm">
                 <fieldset>
                     
                     <!--Name field-->
@@ -106,7 +99,7 @@
         </div>
 
 
-        <!--Twitter timeline-->
+        <!--Twitter ESLCS timeline-->
         <div id="right-col">
             <a class="twitter-timeline" data-lang="en" data-width="300" data-height="600" data-theme="dark" href="https://twitter.com/ESLCS?ref_src=twsrc%5Etfw">Tweets by ESLCS</a> <script async src="https://platform.twitter.com/widgets.js"></script>
         </div>
@@ -115,12 +108,6 @@
     </main>
 
 
-
-    <aside> 
-
-    </aside>
-
-        
     <footer>Copyright Jakub Olbrisch 2023</footer>
 
 

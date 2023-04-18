@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!--
+        Threat Model
+
+        No Potential Threat Spotted
+    -->
+
 <head>
+    <meta charset="UTF-8">
+    
     <title>RGU Esports</title>
 
     <!--Bootstrap-->
@@ -18,21 +26,10 @@
 <body>
 
     <header>
+
         <!--Logo image and webpage title-->
         <h1>RGU Esports</h1>
         <img id="logo" src="images/rgulogo.jpg" alt="RGU logo">
-        
-        <!--Log In Form-->
-        <form style="float: right;" name="loginFields">
-            <fieldset>
-                <input id="email" type="text" value="" placeholder="email">
-                <input id="password" type="text" value="" placeholder="password">
-                <button type="button" onclick="alert('You have been logged in!')">Login</button>
-
-                <script src="scripts/login.js"></script>
-
-            </fieldset>
-        </form>
 
     </header>
 
@@ -67,6 +64,8 @@
             <!--Info Area 1-->
             <div class="accordion-item">
               <h2 class="accordion-header">
+
+                <!--Button to open up accordion-->
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Esports Explained
                 </button>
@@ -75,6 +74,7 @@
               <div id="collapseOne" class="accordion-collapse collapse show">
                 <div class="accordion-body">
 
+                  <!--Information inside-->
                   <strong>Why do online and offline co-exist?</strong>
                   <p>Online events exist as a means of supporting the lower level tiers of competition, as setting up areas with capable PCs, player peripherals and viewieng areas is expensive and hard.
                     <br>Another reason being that video games are played primarily online, so it isn't unfamiliar for gamers to be used to a set up like this, however a big downside to this format is "Ping".
@@ -90,8 +90,8 @@
                     <br>Continuing with the Football comparisons, most Esports are in a tier system, which mimics the Footballing pyramid very closely.
                     <br>Your local LANs may be one off events, or part of a bigger local circuit, or even national. The tier of it really depends on the organiser, and the level of competition.
                     <br>This applies to online cups too, the prestige here is usually through the level of competition, prize money and organisers of the event.
-
                   </p>
+
                 </div>
               </div>
             </div>
@@ -99,6 +99,8 @@
             <!--Info Area 2-->
             <div class="accordion-item">
               <h2 class="accordion-header">
+
+                <!--Button to open up accordion-->
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Counter Strike: Global Offensive (CSGO)
                 </button>
@@ -107,6 +109,7 @@
               <div id="collapseTwo" class="accordion-collapse collapse">
                 <div class="accordion-body">
 
+                  <!--Information Inside-->
                   <strong>CSGO at it's simplest</strong>
                   <p>CSGO is known as the Football of Esports, easy to pick up however impossible to master. You could understand the basic premise of it by watching 1 game with no knowledge.
                     <br>But this article would be useless if you did that. CSGO at it's simplest is a 5 versus 5 team game, with both sides having near identical equipment.
@@ -140,8 +143,14 @@
                     <br>The Support role is very broad, usually one of the last 2 alive, cleaning up the mess left behind by their teammates, holding all the grenades and allowing their teammates to shine in their respective roles.
                     <br>The star player of the team usually is an Awper or rifler, but only when they are specifically a rifler are they referred to as a star, this just means they're the best on their team.
                     
-                    
                   </p>
+                  <p>
+                    <strong>Smoke Grenade Video Tutorial</strong>
+                    <br>
+                    <iframe width="800" height="345" src="https://www.youtube.com/embed/_y9MpNcAitQ">
+                    </iframe>
+                  </p>
+                    
                 </div>
               </div>
             </div>
@@ -149,6 +158,8 @@
             <!--Info Area 3-->
             <div class="accordion-item">
               <h2 class="accordion-header">
+
+                <!--Button to open up accordion-->
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   League of Legends (LoL)
                 </button>
@@ -157,6 +168,7 @@
               <div id="collapseThree" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   
+                    <!--Information Inside-->
                     <strong>LoL at it's simplest</strong>
                     <p>LoL is a very complicated game, with many "champions" (characters the player plays as), items and spells.
                         <br>At it's simplest, the map is split into 3 lanes, with areas inbetween known as the "Jungle", with 2 teams consisting of 5 players, they both aim to breach the base of the enemy team and destroy their "Nexus".
@@ -186,6 +198,15 @@
                         <br>The Support role is a duo with the ADC role, also playing in the Bot lane, their goal is to support the team through utility much like the Top player, but with less damage and more health.
                         <br>Supports are crucial as early on they can help their ADC's momentum to becoming unstoppable, whilst also being able to help the Jungler with map control.
                     </p>
+
+                    <p>
+                      <strong>Video Tutorial from the community</strong>
+                      <br>
+                      <iframe width="800" height="345" src="https://www.youtube.com/embed/0uyLRPmmYPk">
+                      </iframe>
+                    </p>
+
+
                 </div>
               </div>
             </div>
@@ -193,6 +214,8 @@
             <!--Info Area 4-->
             <div class="accordion-item">
                 <h2 class="accordion-header">
+
+                  <!--Button to open up accordion-->
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Rocket League (RL)
                   </button>
@@ -200,6 +223,8 @@
   
                 <div id="collapseFour" class="accordion-collapse collapse">
                   <div class="accordion-body">
+
+                  <!--Information Inside-->
                     <strong>Rocket League at it's simplest.</strong>
                     <p>Rocket League is the closest thing to a real sport, it's a 3 versus 3 car football game.
                         <br>The objective is to score goals, with each player controlling an RC car which can pick up boosts on the map, to move around quicker and even fly to an extent.
@@ -212,15 +237,19 @@
                         <br>Communication is crucial as you always have to be stocked up on boost, so you're able to play the game really whilst keeping the ball away from your goal and trying to put it in the other team's net.
                         <br>You will be rotating up and down the field depending on the position of your teammates, the opposition and the ball.
                     </p>
+
+                    <p>
+                      <iframe width="800" height="345" src="https://www.youtube.com/embed/34Q7fbXAO6k">
+                      </iframe>
+                    </p>
                 </div>
               </div>
+            </div>
 
         </div>
+
     </main>
 
-    <aside>
-
-    </aside>
 
     <footer>Copyright Jakub Olbrisch 2023</footer>
     
