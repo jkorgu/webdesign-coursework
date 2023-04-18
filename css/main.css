@@ -18,6 +18,8 @@ Font(s) used: Alexandria
 
 body {
     background-color: var(--backgroundColor);
+    margin-left:5px;
+    margin-right:5px;
 }
 
 header {
@@ -77,29 +79,42 @@ footer {
     font-family:'Alexandria';
     left:0;
     bottom:0;
+    margin-top:5px;
+    color:white;
 }
 
+button {
+    background-color: #663399;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-family:'Alexandria';
+    font-size: 16px;
+}
 
 /* Navigation bar */
 nav ul{
     margin:0;
     padding:0;
     overflow:hidden;
+    margin-left:5px;
 }
 
 nav li {
-    border:2px, solid;
+    border: solid white 2px;
     background-color: var(--mainColor);
     list-style-type: none;
     float:left;
-    width:10%;
+    width:12.47%;
     padding:16px;
     text-align:center;
-    /*margin-left:5px; TEMP FIX FOR BORDER */
 }
 
 nav li a {
     color: var(--secondaryText);
+    text-align:center;
     text-decoration: none;
     font-size:large;
 }
@@ -114,7 +129,7 @@ nav li:hover {
 
 
 
-/* Table stuff */
+/* Table */
 
 table {
     font-family:'Alexandria';
@@ -128,6 +143,7 @@ table td, table th {
     padding:10px;
     text-align:center;
     vertical-align:middle;
+    width:12.5%;
 }
 
 table tr:nth-child(even) {
@@ -141,10 +157,120 @@ table tr:hover {
 table th {
     background-color: var(--mainColor);
     color: white;
+    text-align:center;
+    vertical-align:middle;
+    font-size:12px;
+}
+
+/* Event Calendar - Form */
+
+.recommendEvents {
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:10px;
+    padding-left:10px;
+    border: 1px solid black;
+    border-radius:5px;
+    float:left;
+    font-family:'Alexandria';
+    max-width:80%;
+}
+
+/* Teams page - Table */
+
+.goodStat {
+    color: green;
+}
+
+.badStat {
+    color: red;
+}
+
+
+/* Teams page - Lists */
+
+div.simpleStatBox {
+    margin-left:35%;
+    font-family:'Alexandria';
+    font-size:15px;
+}
+
+div.simpleStat {
+    border: solid #663399 2px;
+    display: table-cell;
+    padding:1%;
+}
+
+div.simpleStatMid {
+    border-top: solid #663399 2px;
+    border-bottom: solid #663399 2px;
+    display: table-cell;
+    padding:1%;
+}
+
+div.buttonStat{
+    margin-top:0.1%;
+    margin-left:35%;
+
+    font-family:'Alexandria';
+}
+
+div.buttonStat button{
+    background-color: #663399;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-family:'Alexandria';
+    font-size: 16px;
+}
+
+.csgoBad {
+    color: red;
+}
+
+.csgoGood {
+    color: green;
+}
+
+.lolBad {
+    color: red;
+}
+
+.lolGood {
+    color: green;
+}
+
+.rlBad{
+    color: red;
+}
+
+.rlGood{
+    color: green;
+}
+
+.black-ul > li{
+    color:black;
+}
+
+.centerH3 {
+    text-align:center;
 }
 
 
 
+.twitterCenter{
+    padding-bottom:1%;
+    padding-left:35%;
+}
+
+#centerH6 {
+    text-align:center;
+}
+
+
+/* Form Universal CSS */
 
 
 fieldset{
@@ -172,11 +298,30 @@ input, label{
 }
 
 
+.contactForm {
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:10px;
+    padding-left:10px;
+    border: 1px solid black;
+    border-radius:5px;
+    float:left;
+    font-family:'Alexandria';
+    max-width:80%;
+}
+
+.contactForm input {
+    margin:5px;
+}
+
+
+
 /*  Carousel  */
 
 #home-carousel .carousel-item{
     height:100%;
     width:100%;
+    border:2px solid #663399;
 }
 
 #home-carousel .carousel-item-active{
@@ -193,6 +338,7 @@ input, label{
 .white-text{
     color:white;
 }
+
 
 /* Image Gallery */
 
@@ -211,6 +357,41 @@ input, label{
 
 
 /* Aside Content - aka Article */
+
+.articleImage{
+    width:100px;
+    height:100px;
+    float:left;
+    margin:5px;
+}
+
+
+.article {
+    border: 2px solid black;
+    text-align:left;
+    padding-top:10px;
+}
+
+/* Community Night */
+
+.winnerBox{
+    border-top:5px solid #663399;
+    padding-top:20px;
+    padding-bottom:50px;
+    text-align:left;
+    font-size:12px;
+    margin-top:50px;
+}
+
+.winnerBox img{
+    width:200px;
+    height:200px;
+    float:left;
+}
+
+.winnerBox strong{
+    font-size:20px;
+}
 
 
 /* Accordion */
