@@ -1,16 +1,18 @@
 /*
 Main Text Color: Black (#000000)
 Secondary Text and Reading Background Color: White (#FFFFFF)
-Background Color: "SteelBlue" (#4682B4)
-Accent and Interactive Feature Color: "Darker Purple" #36006C
+Background Color: #bdbdbd
+Accent and Interactive Feature Color: #70116b
 Main Color: "RebeccaPurple" (#663399)
 Font(s) used: Alexandria
 */
+
+/* Generic Tags */
 :root {
     --mainText: black;
     --secondaryText: white;
     --backgroundColor: #bdbdbd;
-    --accentColor: #1b1b1b;
+    --accentColor: #70116b;
     --mainColor: #663399;
     --borderColor: #160429;
 }
@@ -66,6 +68,8 @@ main {
     background-color: var(--secondaryText);
     border-radius:10px;
     overflow:auto;
+    margin-left:5px;
+    margin-right:5px;
 }
 
 aside {
@@ -155,7 +159,7 @@ table tr:hover {
 }
 
 table th {
-    background-color: var(--mainColor);
+    background-color: var(--accentColor);
     color: white;
     text-align:center;
     vertical-align:middle;
@@ -367,7 +371,7 @@ input, label{
 
 
 .article {
-    border: 2px solid black;
+    border: 2px solid #663399;
     text-align:left;
     padding-top:10px;
 }
@@ -395,3 +399,13 @@ input, label{
 
 
 /* Accordion */
+
+.accordion-button {
+    border-color: #663399;
+    box-shadow: 0 0 0 0.125rem rgba(102, 51, 153, 1);
+}
+
+.accordion-button:focus {
+    border-color: #663399;
+    box-shadow: 0 0 0 0.125rem rgba(102, 51, 153, 1);
+ }

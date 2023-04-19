@@ -3,7 +3,7 @@
 document.getElementById("img-gallery1").addEventListener("mouseover", highlight);
 document.getElementById("img-gallery1").addEventListener("mouseout", delight);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight() {
     document.getElementById("img-gallery1").style="border: solid blue 2px;"
 }
@@ -20,7 +20,7 @@ function delight() {
 document.getElementById("img-gallery2").addEventListener("mouseover", highlight2);
 document.getElementById("img-gallery2").addEventListener("mouseout", delight2);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight2() {
     document.getElementById("img-gallery2").style="border: solid blue 2px;"
 }
@@ -37,7 +37,7 @@ function delight2() {
 document.getElementById("img-gallery3").addEventListener("mouseover", highlight3);
 document.getElementById("img-gallery3").addEventListener("mouseout", delight3);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight3() {
     document.getElementById("img-gallery3").style="border: solid blue 2px;"
 }
@@ -54,7 +54,7 @@ function delight3() {
 document.getElementById("img-gallery4").addEventListener("mouseover", highlight4);
 document.getElementById("img-gallery4").addEventListener("mouseout", delight4);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight4() {
     document.getElementById("img-gallery4").style="border: solid blue 2px;"
 }
@@ -71,7 +71,7 @@ function delight4() {
 document.getElementById("img-gallery5").addEventListener("mouseover", highlight5);
 document.getElementById("img-gallery5").addEventListener("mouseout", delight5);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight5() {
     document.getElementById("img-gallery5").style="border: solid blue 2px;"
 }
@@ -88,7 +88,7 @@ function delight5() {
 document.getElementById("img-gallery6").addEventListener("mouseover", highlight6);
 document.getElementById("img-gallery6").addEventListener("mouseout", delight6);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight6() {
     document.getElementById("img-gallery6").style="border: solid blue 2px;"
 }
@@ -105,7 +105,7 @@ function delight6() {
 document.getElementById("img-gallery7").addEventListener("mouseover", highlight7);
 document.getElementById("img-gallery7").addEventListener("mouseout", delight7);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight7() {
     document.getElementById("img-gallery7").style="border: solid blue 2px;"
 }
@@ -122,7 +122,7 @@ function delight7() {
 document.getElementById("img-gallery8").addEventListener("mouseover", highlight8);
 document.getElementById("img-gallery8").addEventListener("mouseout", delight8);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight8() {
     document.getElementById("img-gallery8").style="border: solid blue 2px;"
 }
@@ -139,7 +139,7 @@ function delight8() {
 document.getElementById("img-gallery9").addEventListener("mouseover", highlight9);
 document.getElementById("img-gallery9").addEventListener("mouseout", delight9);
 
-//Adds a blue border aroound the image
+//Adds a blue border around the image
 function highlight9() {
     document.getElementById("img-gallery9").style="border: solid blue 2px;"
 }
